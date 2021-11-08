@@ -1,4 +1,4 @@
-
+import {Input} from "./input"
 
 function Manag(){
 
