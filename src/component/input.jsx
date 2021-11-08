@@ -1,23 +1,20 @@
-import React,{useState} from 'react';
-
-
+import React, { useState } from 'react';
+import './input.css'
 function Input({onClick}){
-const[title,setTitle] = useState("");
+  const [title,setTitle] = useState("");
 
+  
     return (
         <div>
             <input
-            placeholder = "add"
+            id = "input"
+            placeholder = "add a To-do"
             value = {title}
             onChange = {(e) => setTitle(e.target.value)}
-            >
-            </input>
-            <button>+</button>
+            />
+            <button id = "but" img onClick = {() => onClick(title)}>+</button>
         </div>
-    )
-
-
+    );
 }
 
-
-export {Input}
+export {Input};
