@@ -16,6 +16,14 @@ function Manag(){
         };
          setdata([...data,payload]);
     };
+    const handelDelete = (id) => {
+
+    }
+    const handelToggle = (id) => {
+        const update = data.map(item => item.id === id ?
+            {...item,status:!item.status} 
+            : item)
+    };
     
 
     return (
@@ -24,6 +32,13 @@ function Manag(){
               {data
               .filter((item) => (showAll ? true : !item.status))
               
+              .map((item) =>(
+                  <List/
+                  handelDelete = {handelDelete}
+                  handelToggle = {handelToggle}
+                  key = {item.id}{...item}
+                  >
+              ))
               }
 
 
