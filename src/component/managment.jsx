@@ -2,7 +2,7 @@
 
 function Manag(){
 
-    return <h1>working</h1>
+    return <h1>runing</h1>
 }
 
 export {Manag}
