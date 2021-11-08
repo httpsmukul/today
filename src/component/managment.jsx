@@ -6,8 +6,8 @@ import {List} from "./list";
 
 function Manag(){
 
-    const[data,setdata] = useState([]);
-    cnst[showAll,setShowAll] =React.useState();
+    const [data,setdata] = useState([]);
+    const [showAll,setShowAll] =React.useState();
         const handelAdd = (title) =>{
             const payload = {
                 title,
@@ -20,8 +20,11 @@ function Manag(){
 
     return (
         <div>
-                <Todoinput onClick = {handelAdd}></Todoinput>
-
+                <Input onClick = {handelAdd}></Input>
+              {data
+              .filter((item) => (showAll ? true : !item.status))
+              
+              }
 
 
         </div>

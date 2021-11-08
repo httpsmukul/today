@@ -12,6 +12,7 @@ const[title,setTitle] = useState("");
             onChange = {(e) => setTitle(e.target.value)}
             >
             </input>
+            <button>+</button>
         </div>
     )
 
