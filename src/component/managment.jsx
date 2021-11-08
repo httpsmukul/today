@@ -1,8 +1,32 @@
-import {Input} from "./input"
+import { v4 as uuidv4 } from 'uuid';
+import React, {useState} from 'react';
+import {Input} from "./input";
+import {List} from "./list";
+
 
 function Manag(){
 
-    return <h1>runing</h1>
+    const[data,setdata] = useState([]);
+    cnst[showAll,setShowAll] =React.useState();
+        const handelAdd = (title) =>{
+            const payload = {
+                title,
+                status : false,
+                id : uuidv4()
+        };
+         setdata([...data,payload]);
+    };
+    
+
+    return (
+        <div>
+                <Todoinput onClick = {handelAdd}></Todoinput>
+
+
+
+        </div>
+
+    )
 }
 
 export {Manag}
