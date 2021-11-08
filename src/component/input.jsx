@@ -11,7 +11,7 @@ function Input({onClick}){
             value = {title}
             onChange = {(e) => setTitle(e.target.value)}
             />
-            <button id = "but" img onClick = {() => onClick(title)}>+</button>
+            <button id = "but" img onClick = {() => onClick(title)}>add product</button>
         </div>
     );
 }

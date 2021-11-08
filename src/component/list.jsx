@@ -7,7 +7,7 @@ function List ({title,id,status,handleToggle}){
         <div id = "div">   
         <div>{title} </div>
          <button id = "button" onClick = {() => handleToggle(id)}>
-             {status ? "Complete" : "Not Complete"}
+             {status ? "back to current" : "order"}
          </button>
          </div>
          <hr></hr>

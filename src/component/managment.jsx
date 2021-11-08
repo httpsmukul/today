@@ -42,7 +42,7 @@ function Manag(){
                 handleToggle = {handleToggle}
                 key = {item.id}{...item}/>
             ))}
-            <button id = "but1" onClick = {() => setshowAll(!showAll)}>{showAll ? "Show Not-completed Task" : "Show All Task"}</button>
+            <button id = "but1" onClick = {() => setshowAll(!showAll)}>{showAll ? "order list" : "current list"}</button>
         </div>
     );
 }
