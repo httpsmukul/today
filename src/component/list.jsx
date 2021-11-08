@@ -1,3 +1,7 @@
+import "./input.css"
+
+
+
 function List ({title,id,status,handleToggle}){
   
 

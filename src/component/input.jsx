@@ -1,7 +1,12 @@
 import React, { useState } from 'react';
+import "./input.css"
 function Input({onClick}){
   const [title,setTitle] = useState("");
-
+    //  console.log(title)
+     if(title === "") {
+         alert("please add some data");
+        
+     }
   
     return (
         <div>
@@ -11,7 +16,7 @@ function Input({onClick}){
             value = {title}
             onChange = {(e) => setTitle(e.target.value)}
             />
-            <button id = "but" img onClick = {() => onClick(title)}>add product</button>
+            <button id = "but"  onClick = {() => onClick(title)}>add product</button>
         </div>
     );
 }

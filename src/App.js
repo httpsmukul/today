@@ -3,7 +3,8 @@ import { Manag } from "./component/managment";
 function App() {
 	return (
 		<div className="App">
-			<div>hey its working</div>
+			<div>shop managment</div>
+			<br />
 			<Manag></Manag>
 		</div>
 	);

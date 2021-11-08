@@ -16,9 +16,7 @@ function Manag(){
          setdata([...data,payload]);
      };
      
-     const handleDelete = (id) => {
-
-     }
+     
 
      const handleToggle = (id) => {
         const updateTodo = data.map(item => item.id === id ? 
@@ -38,7 +36,7 @@ function Manag(){
             
             .map((item) =>(
                 <List 
-                handleDelete = {handleDelete}
+                // handleDelete = {handleDelete}
                 handleToggle = {handleToggle}
                 key = {item.id}{...item}/>
             ))}
