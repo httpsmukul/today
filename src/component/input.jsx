@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import './input.css'
 function Input({onClick}){
   const [title,setTitle] = useState("");
 
@@ -8,7 +7,7 @@ function Input({onClick}){
         <div>
             <input
             id = "input"
-            placeholder = "add a To-do"
+            placeholder = "add product"
             value = {title}
             onChange = {(e) => setTitle(e.target.value)}
             />

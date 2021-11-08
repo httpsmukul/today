@@ -1,24 +1,17 @@
+function List ({title,id,status,handleToggle}){
+  
 
-function List({title,id,status,handleToggle}){
 
     return (
         <>
-         <div>
-
-             <div>{title}</div>
-             <button id = "button" onClick = {() => handleToggle(id)}>
-                 {status ?"omplete" : "not Complete"}
-
-             </button>
-
-        
-
+        <div id = "div">   
+        <div>{title} </div>
+         <button id = "button" onClick = {() => handleToggle(id)}>
+             {status ? "Complete" : "Not Complete"}
+         </button>
          </div>
-
-       <hr></hr>
-
-
-        </>
+         <hr></hr>
+         </>
     )
 }
 export {List}
